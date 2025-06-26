@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Lora Regular';
+    src:
+        local("Lora-Regular"),
+        url("./resources/fonts/Lora-Regular.ttf");
+}
+
+* {
+    color: #6a440b;
+    font-family: 'Lora Regular';
+    text-align: center;
+}
+
+/* don't touch these (css colours). else i'm cutting your hands. */
+html {
+    background: #d6c9bc;
+    height: 100%;
+}
+
+.btn {
+    background-color: #6a440b;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.allglyphs {
+    margin-bottom: 20px;
+}
+
+#aerende {
+    width: 35%;
+}
+
+#pagename {
+    font-style: italic;
+    text-shadow: 2px 2px #c28f6d;
+}
+
+#results {
+    background-color: #f1ebe5;
+    border-collapse: collapse;
+    border-radius: 3px;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#results td {
+    border: 1px solid #332002;
+    padding: 15px;
+    text-align: justify;
+}
+
+#results td:hover {
+    background-color: #d2ac93;
+    /* in-cell text spacing
+    *  padding-left: 5%;
+    *  padding-right: 5%; 
+    */
+}
+
+#sakoen {
+    width: 55%;
+}
+
+#searchbar {
+    border-radius: 5px;
+    display: block;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#searchbar:focus {
+    outline: 2px solid #c28f6d;
+}
+
+#selector {
+    font-weight: bold;
+}
