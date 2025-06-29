@@ -7,9 +7,10 @@ document.getElementById("mainPageBtn").addEventListener("click", () => window.op
 document.getElementById("wsystemsBtn").addEventListener("click", () => window.open("wsystems.html", "_self"));
 
 window.addEventListener("load", () => {
-    loadCSV("./assets/data/sakoen.csv");
+    loadCSV("https://docs.google.com/spreadsheets/d/e/2PACX-1vStgau9hRu3-mCmW_Zje1n1mH-9VPyVnOJk4duYpsCXsX45nYWl-WCsXq2IXlwtq_VUw5IOvjBrLZr4/pub?gid=1974377198&single=true&output=csv");
     input.focus();
 });
+
 input.addEventListener("keyup", () => loadTable());
 selector.addEventListener("mousedown", () => input.focus());
 

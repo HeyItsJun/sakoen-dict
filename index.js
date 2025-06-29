@@ -1,5 +1,3 @@
-// Updated index.js to support CSV loading from ./assets/data
-
 const fields = ["Sakoen", "Pronunciation", "Part of speech", "English"];
 const table = document.getElementById("results");
 const input = document.getElementById("searchbar");
@@ -11,7 +9,7 @@ document.getElementById("wsystemsBtn").addEventListener("click", () => window.op
 window.addEventListener("load", () => {
     input.value = "";
     input.focus();
-    loadCSV("./assets/data/sakoen.csv");
+    loadCSV("https://docs.google.com/spreadsheets/d/e/2PACX-1vStgau9hRu3-mCmW_Zje1n1mH-9VPyVnOJk4duYpsCXsX45nYWl-WCsXq2IXlwtq_VUw5IOvjBrLZr4/pub?gid=1974377198&single=true&output=csv");
 });
 
 input.addEventListener("keyup", () => loadTable());
